@@ -2,10 +2,12 @@
 <li class="comment even thread-even depth-{{ depth }} parent" id="comment-{{ comment_item.pk }}">
     <div id="div-comment-{{ comment_item.pk }}" class="comment-body">
         <div class="comment-author vcard">
-            <img alt=""
-                 src="{{ comment_item.author.email|gravatar_url:150 }}"
+             <!-- <img alt=""
+                src="{{ comment_item.author.email|gravatar_url:150 }}"
+                 src="blog/static/blog/img/icon96.png"
                  srcset="{{ comment_item.author.email|gravatar_url:150 }}"
-                 class="avatar avatar-96 photo" height="96" width="96">
+
+                 class="avatar avatar-96 photo" height="96" width="96">-->
             <cite class="fn">
                 <a rel="nofollow"
                         {% if comment_item.author.is_superuser %}
