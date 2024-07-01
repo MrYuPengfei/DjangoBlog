@@ -98,7 +98,10 @@ python manage.py compress --force
 
 本项目已经支持使用docker来部署，如果你有docker环境那么可以使用docker来部署，具体请参考:[docker部署](/docs/docker.md)
 
-
+### Linux后台运行
+```shell
+ nohup python manage.py runserver 0.0.0.0:8888 >>runserver.log 2>&1 &
+```
 
 ## 更多配置:
 [更多配置介绍](/docs/config.md)  
