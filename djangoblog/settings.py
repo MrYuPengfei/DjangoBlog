@@ -219,12 +219,12 @@ EMAIL_USE_TLS = env_to_bool('DJANGO_EMAIL_TLS', False)
 EMAIL_USE_SSL = env_to_bool('DJANGO_EMAIL_SSL', True)
 EMAIL_HOST = os.environ.get('DJANGO_EMAIL_HOST') or 'smtp.qq.com'
 EMAIL_PORT = int(os.environ.get('DJANGO_EMAIL_PORT') or 465)
-EMAIL_HOST_USER = os.environ.get('DJANGO_EMAIL_USER') or 'mr_yupengfei_host@foxmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD') or 'mcqfwuhloifsdceh'
+EMAIL_HOST_USER = os.environ.get('DJANGO_EMAIL_USER') or 'mr_yupengfei@foxmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD') or 'kwwvljymfsoqhbbc'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 # Setting debug=false did NOT handle except email notifications
-ADMINS = [('admin', os.environ.get('DJANGO_ADMIN_EMAIL') or 'mr_yupengfei_host@foxmail.com')]
+ADMINS = [('admin', os.environ.get('DJANGO_ADMIN_EMAIL') or 'mr_yupengfei@foxmail.com')]
 # WX ADMIN password(Two times md5)
 WXADMIN = os.environ.get(
     'DJANGO_WXADMIN_PASSWORD') or '995F03AC401D6CABABAEF756FC4D43C7'
